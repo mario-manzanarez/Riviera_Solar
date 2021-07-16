@@ -17,6 +17,7 @@
         <div class="col-md-8 bg-white ">
             <h1 class="mt-2">No Visita {{$visita->id}}</h1>
             <hr class="mt-1 mb-2 ">
+            <h2 class="title">En: <span class="text-primary">{{$visita->lugar}}</span></h2>
             <h2 class="title">Realizada por: <span class="text-primary">{{$visita->usuario->nombre}}</span></h2>
             <span>{{$visita->created_at}}</span>
             <h3 class="mt-5 title">Descripción</h3>
