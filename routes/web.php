@@ -12,10 +12,15 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// rutas para la landing page
+Route::get('/', function(){
+    return view('home.index');
+});
 Route::get('/usuario/crear', 'UsuariosController@crearUsuario' );
 
 Auth::routes();
+
+
 //rutas para los administradores
 Route::get('/admin/list','UsuariosController@listar');
 Route::get('/home', 'HomeController@index')->name('home');
